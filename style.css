@@ -1,0 +1,176 @@
+body {
+    font-family: 'Inter', serif;
+    font-weight: 400;
+}
+
+.header_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.header_ img{
+    height: 3rem;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+}
+
+.nav_links ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 10px;
+    font-weight: 700;
+    color: rgb(171, 171, 171);
+    transition: all .2s ease-in-out;
+}
+
+.nav_links ul li {
+    padding: 15px;
+}
+
+.nav_links ul li:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 35rem;
+}
+
+/* @media maxwidth(750px) {
+    .cover {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+.right_ {
+    display: flex;
+    gap: 3rem;
+    width: 95%;
+    height: 3rem;
+}
+
+button {
+    padding: 13px;
+    width: 150px;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.right img{
+    object-fit: cover;
+    max-height: 24rem;
+    
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.left {
+    border: 1px solid black;
+    padding: 40px;
+    background-color: hsl(240, 100%, 5%);
+    color: gray;
+}
+
+.left h1{
+    color: hsl(35, 77%, 62%);
+}
+
+.left h3{
+    color: hsl(36, 100%, 99%);
+    transition: all .2s ease-in-out;
+}
+
+.left h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+p{
+    font-family: 'Inter';
+    font-size: 1.1rem;
+    color: hsl(236, 13%, 42%);
+}
+
+.body_ {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.body1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.body1 img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.txt {
+    width: 15rem;
+    
+} 
+
+.txt h2:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.txt span {
+    font-size: 2.5rem;
+    color: hsl(233, 8%, 79%);
+    font-weight: 600;
+}
+
+.txt p{
+    font-size: 1.1rem;
+    color: hsl(236, 13%, 42%);
+}
+
+h4 {
+    font-size: 2.5rem;
+    color: gray;
+    text-align: start;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: hsl(240, 100%, 5%);
+}
