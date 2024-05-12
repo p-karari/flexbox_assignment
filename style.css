@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header_ {
@@ -17,6 +17,17 @@ body {
 @font-face {
     font-family: 'Inter';
     src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+}
+
+.dd-btn {
+    width: 40px;
+    height: 20px;
+    display: none;
+    border: none;
+    background-color: white;
+    background-image: url(assets/images/icon-menu.svg);
+    margin-top: 16px;
+    
 }
 
 .nav_links ul{
@@ -45,27 +56,17 @@ body {
     height: 35rem;
 }
 
-/* @media maxwidth(750px) {
-    .cover {
-        display: flex;
-        flex-direction: column;
-    }
-} */
-
 .right_ {
     display: flex;
-    gap: 3rem;
-    width: 95%;
-    height: 3rem;
 }
 
-button {
+.btn2 {
     padding: 13px;
     width: 150px;
     background-color: hsl(5, 85%, 63%);
     border: none;
-    border-radius: 8px;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     transition: all .2s ease-in-out;
 
@@ -76,9 +77,11 @@ button:hover {
     cursor: pointer;
 }
 
-.right img{
+.cover_img{
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    background-repeat: no-repeat;
     object-fit: cover;
-    max-height: 24rem;
+    height: 24rem;
     
 }
 
@@ -130,16 +133,16 @@ p{
     
 }
 
-.body1 img{
-    width: 15rem;
-    height: 15rem;
-    object-fit: cover;
-}
-
 .txt {
     width: 15rem;
     
 } 
+
+.txt .span2{
+    font-size: 25px;
+    color: hsl(240, 100%, 5%);
+    font-weight: 650;
+}
 
 .txt h2:hover {
     color: hsl(5, 85%, 63%);
@@ -152,7 +155,7 @@ p{
     font-weight: 600;
 }
 
-.txt p{
+.txt p {
     font-size: 1.1rem;
     color: hsl(236, 13%, 42%);
 }
@@ -173,4 +176,98 @@ h1 {
 
 h2 {
     color: hsl(240, 100%, 5%);
+}
+
+@media screen and (max-width: 700px) {
+    .header_ img{
+        height: 1.8rem;
+        padding: 20px;
+    }
+    .nav_links{
+        position: absolute;
+        display: none;
+    }
+    .nav_links ul {
+        display: flex;
+        flex-direction: column;
+        color: hsl(240, 100%, 5%);
+        gap: 15px;
+        padding: auto;
+    }
+    .dd {
+        position: relative;
+        display: inline-block;
+    }
+    .dd:hover >.dd-btn {
+        background-image: url(assets/images/icon-menu-close.svg);
+        background-color: white;
+        width: 50px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+    .dd:hover >.nav_links {
+        display: block;
+        background-color: white;
+        width: 16rem;   
+        margin-left: -11rem;
+        height: 100vh;
+    }
+    .dd-btn {
+        display: block;
+    }
+    .right_ {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 10px;
+        /* margin: 0 0 30px 0; */
+    }
+    .cover_img {
+        background-image: url(assets/images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        height: 18rem;
+        margin: 0;
+        width: 19rem;
+        /* aspect-ratio: 686, 600; */
+    }
+    .right h1 {
+        font-size: 2.6rem;
+        font-weight: 900;
+    }
+    .cover {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+    }
+    .body_ {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+    }
+    .body1 {
+        margin: 5px;
+    }
+    .body1 img {
+        width: 7rem;
+    }
+    .txt {
+        width: 10rem;
+        height: 4rem;
+    }
+    .txt .span2{
+        font-size: 18px;
+        color: hsl(240, 100%, 5%);
+        font-weight: 800;
+    }
+    .txt p{
+        font-size: 13px;
+        font-weight: 650;
+    }
+    .txt span{
+        font-size: 32px;
+    }
+    .txt span h2{
+        font-size: 15px;
+    }
 }
